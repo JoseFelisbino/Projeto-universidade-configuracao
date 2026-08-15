@@ -1,0 +1,28 @@
+# Requisitos funcionais
+  - Controle de usuários (Login, senha e permissões);
+    ADM (Desenvolvedor): acesso total a plataforma
+    Superior empresa (Responsável pelo setor): controle de trilhas, dashboard de progressão cursos.
+    Funcionário (aluno): acesso as trilhas e progressão de evolução individual.
+  - Cadastro de trilhas de cursos do setor;
+  - Dashboard de progressão de cursos geral e a nível gerencial e individual.
+  - Registro de conclusão.
+
+  ---
+
+  # Requisitos não funcionais
+      - Controle de acessos criptografados, seguindo as normas da LGPD.
+      - Design responsivo e intuitivo.
+      - Tempo de resposta compativel.
+
+    ---
+
+    # Tecnologia
+      - Banco de dados: MySQL ou Postgress.
+      - Backend: Python, Typescript ou Java.
+      - FrontEnd: HTML, CSS e JavaScript.
+      - FrameWorks: Django, NodeJs e Spring Boot.
+
+    ---
+        
+      
+  
