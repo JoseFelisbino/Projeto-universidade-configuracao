@@ -10,31 +10,32 @@
 
   ---
 
-  # Requisitos não funcionais
-      - Controle de acessos criptografados, seguindo as normas da LGPD.
-      - Design responsivo e intuitivo.
-      - Tempo de resposta compativel.
-      - Instruções de uso.
+# Requisitos não funcionais
+  - Controle de acessos criptografados, seguindo as normas da LGPD.
+  - Design responsivo e intuitivo.
+  - Tempo de resposta compativel.
+  - Instruções de uso.
 
-    ---
+   ---
 
-    # Tecnologia
-      - Banco de dados: MySQL ou Postgress.
-      - Backend: Python (dashboards e recomendações) / Java (API em geral)
-      - FrontEnd: HTML, CSS e JavaScript.
-      - FrameWorks: Streamlit (dashboard) / Spring Boot (API).
+# Tecnologia
+  - Banco de dados:  Postgress.
+  - Backend: Python (dashboards e recomendações) / Java (API em geral)
+  - FrontEnd: HTML, CSS e JavaScript.
+  - FrameWorks: Streamlit (dashboard) / Spring Boot (API).
 
     ---
 
     # Design
 
-    [Link de acesso](https://www.figma.com/design/5HBY2lOYPd1KlOroduDQ1L/Plataforma-de-cursos--Community-?node-id=1-2&t=2RXf8nIq40ItVyp8-1)
+     ## [Link de acesso](https://www.figma.com/design/5HBY2lOYPd1KlOroduDQ1L/Plataforma-de-cursos--Community-?node-id=1-2&t=2RXf8nIq40ItVyp8-1)
 
 
     ---
 
     # Arquitetura
-
+    
+```bash
 │
 ├── frontend/
 │   ├── pages/
@@ -57,11 +58,11 @@
 │
 └── database/
 
+```
+
 ---
 
     # Cronograma
-
-# 📅 Cronograma do Projeto
 
 | Etapa | Período | Entrega | Principais atividades |
 |---|---|---|---|
