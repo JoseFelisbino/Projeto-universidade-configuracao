@@ -62,7 +62,19 @@
 
 ---
 
-    # Cronograma
+# Diagrama de entidades e relacionamentos
+
+<p align="center">
+  <img src="./assets/driagrama de entidade.png" alt="Diagrama de entidades" width="70%">
+</p>
+
+<p align="center">
+  <img src="./assets/Diagrama.png" alt="Diagrama de relacionamentos" width="70%">
+</p>
+
+
+
+# Cronograma
 
 | Etapa | Período | Entrega | Principais atividades |
 |---|---|---|---|
