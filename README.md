@@ -1,32 +1,18 @@
-# Estrutura do Frontend
+# Estrutura do Projeto Frontend
 
-- `frontend/` — Diretório raiz que contém todo o código da aplicação voltada para o usuário.
-
-  - `css/` — Responsável por todos os arquivos de estilização da página em **(CSS)**.
-
-    - `base/` — Contém os estilos globais da aplicação, incluindo:
-      - Reset de estilos padrão do navegador;
-      - Tipografia padrão;
-      - Variáveis estruturais, como cores e espaçamentos.
-
-    - `components/` — Contém estilos modulares e isolados para componentes visuais reutilizáveis, garantindo que o estilo de elementos como botões, cards e menus não afete outras áreas da aplicação.
-
-  - `js/` — Contém toda a lógica de programação, manipulação do DOM e interatividade estruturada em **JavaScript**.
-
-    - `api/` — Responsável pelas configurações e métodos utilizados para realizar requisições HTTP e estabelecer comunicação com o backend, como requisições `fetch` para consumo de APIs REST.
-
-    - `components/` — Contém a lógica de comportamento isolada de componentes específicos da interface, como abrir e fechar um menu lateral.
-
-    - `pages/` — Contém scripts responsáveis pela lógica e pelo fluxo de dados específicos de cada tela ou página.
-
-    - `services/` — Reúne módulos relacionados às regras de negócio, processamento de dados mais complexo e integrações externas, mantendo essas responsabilidades abstraídas da interface.
-
-    - `utils/` — Contém funções utilitárias e de uso geral, como:
-      - Formatação de datas;
-      - Validação de textos;
-      - Máscaras de formulário;
-      - Outras funções auxiliares reutilizáveis.
-
-  - `pages/` — Destinado ao armazenamento dos arquivos HTML secundários ou *templates* que representam as demais páginas e rotas do sistema.
-
-  - `index.html` — Arquivo principal de entrada  da aplicação. Define a estrutura base do documento HTML e realiza a importação dos principais arquivos CSS e JavaScript necessários para carregar a aplicação no navegador.
+```shell
+frontend/
+├── css/
+│   ├── base/            # Estilos globais e configurações fundamentais (como reset de CSS, variáveis de cores, fontes e tipografia).
+│   └── components/      # Folhas de estilo individuais e reutilizáveis específicas para componentes visuais (como botões, cards, modais).
+│
+├── js/
+│   ├── api/             # Configurações de clientes HTTP (como instâncias do Axios ou funções Fetch) para comunicação centralizada com o backend.
+│   ├── components/      # Scripts que gerenciam a lógica de comportamento e interatividade de componentes dinâmicos e isolados da interface.
+│   ├── pages/           # Arquivos JavaScript que comandam o comportamento específico e o fluxo de dados de páginas inteiras do sistema.
+│   ├── services/        # Classes ou funções responsáveis pelas regras de negócio do client-side, manipulação complexa de dados e autenticação.
+│   └── utils/           # Funções utilitárias globais e ajudantes helper rápidos (como formatadores de data, validadores de CPF/CNPJ ou máscaras de input).
+│
+├── pages/               # Arquivos HTML secundários que representam as diferentes telas ou visualizações do site (como login.html, dashboard.html).
+└── index.html           # Arquivo HTML principal do projeto que serve como porta de entrada da aplicação.
+```
