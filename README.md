@@ -1,4 +1,5 @@
 # Estruturar Estrutura Python
+```text
 analytics-python/
 │
 ├── app/                        # Código principal da aplicação Python
@@ -40,3 +41,4 @@ analytics-python/
 ├── requirements.txt            # Bibliotecas Python necessárias para o projeto
 ├── .env                        # Variáveis de ambiente e configurações locais, utilizando Anaconda
 └── main.py                     # Método principal da aplicação Python
+```
