@@ -1,0 +1,5 @@
+CREATE TABLE perfil(
+	id SERIAL PRIMARY KEY,
+	nome VARCHAR(50) UNIQUE,
+	descricao TEXT
+);

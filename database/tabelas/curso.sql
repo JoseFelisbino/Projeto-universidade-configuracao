@@ -1,0 +1,10 @@
+CREATE TABLE curso(
+	id SERIAL PRIMARY KEY,
+	titulo VARCHAR(150) UNIQUE,
+	descricao TEXT,
+	carga_horaria INT,
+	tipo VARCHAR(50),
+	ativo BOOLEAN DEFAULT true,
+	criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	atualizado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
