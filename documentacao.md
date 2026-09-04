@@ -1,4 +1,4 @@
-# Requisitos funcionais
+# Requisitos funcionais !
   - Controle de usuários (Login, senha e permissões);
     ADM (Desenvolvedor): acesso total a plataforma
     Superior empresa (Responsável pelo setor): controle de trilhas, dashboard de progressão cursos.
