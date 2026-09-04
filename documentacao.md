@@ -86,6 +86,8 @@
 | **6. Recomendações com ML** | **29/09 – 05/10** | Sistema de recomendações | Preparação dos dados, análise do histórico, criação do modelo de recomendação, integração Python + API e exibição dos cursos recomendados |
 | **7. Integração e testes finais** | **06/10 – 12/10** | Sistema completo | Integração Frontend + API + Python, testes, correção de bugs, segurança, responsividade e validação dos requisitos |
 | **8. Entrega final** | **13/10 – 19/10** | Projeto finalizado | Testes de aceitação, ajustes finais, preparação para apresentação/deploy e entrega do projeto |
+
+----
         
       
   
