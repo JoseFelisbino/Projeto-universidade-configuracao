@@ -44,7 +44,7 @@ analytics-python/
 └── main.py                     # Método principal da aplicação Python
 ```
 
-#Estrutura backend
+# Estrutura backend
 
 
 ```text
