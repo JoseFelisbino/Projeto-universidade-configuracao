@@ -1,0 +1,10 @@
+CREATE TABLE trilha_curso(
+	id SERIAL PRIMARY KEY,
+	trilha_id INTEGER NOT NULL,
+	curso_id INTEGER NOT NULL,
+	ordem INTEGER,
+	FOREIGN KEY (trilha_id) REFERENCES trilha (id),
+	FOREIGN KEY (curso_ID) REFERENCES curso (id),
+	criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	atualizado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

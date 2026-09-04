@@ -1,12 +1,3 @@
-# Requisitos funcionais
-  - Controle de usuários (Login, senha e permissões);
-    ADM (Desenvolvedor): acesso total a plataforma
-    Superior empresa (Responsável pelo setor): controle de trilhas, dashboard de progressão cursos.
-    Funcionário (aluno): acesso as trilhas e progressão de evolução individual.
-  - Cadastro de trilhas de cursos do setor;
-  - Dashboard de progressão de cursos geral e a nível gerencial e individual.
-  - Recomendações de curso com base no histórico de cursos feitos
-  - Registro de conclusão.
 
   ---
 
