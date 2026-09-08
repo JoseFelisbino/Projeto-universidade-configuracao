@@ -25,6 +25,7 @@ public class TokenConfig {
 
         return JWT.create()
                 .withClaim("userId", user.getId())
+                .withClaim("roles", user.getRoles().stream().map(Enum::name).toList())
                 .withSubject(user.getEmail())
                 .withExpiresAt(Instant.now().plusSeconds(86400))
                 .withIssuedAt(Instant.now())
@@ -43,6 +44,7 @@ public class TokenConfig {
             return Optional.of(JWTUserData.builder()
                     .userId(decote.getClaim("userId").asLong())
                     .email(decote.getSubject())
+                            .roles(decote.getClaim("roles").asList(String.class))
                     .build());
 
         } catch (JWTVerificationException ex) {

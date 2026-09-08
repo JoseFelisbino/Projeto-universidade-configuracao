@@ -6,12 +6,14 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.apache.logging.log4j.util.Strings;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Optional;
 
 @Component
@@ -32,7 +34,12 @@ public class SecurityFilter extends OncePerRequestFilter {
 
             if (opUser.isPresent()) {
                 JWTUserData userData = opUser.get();
-                UsernamePasswordAuthenticationToken authencation = new UsernamePasswordAuthenticationToken(userData, null, null);
+
+                List<SimpleGrantedAuthority> authorities = userData.roles().stream()
+                        .map(SimpleGrantedAuthority::new)
+                        .toList();
+
+                UsernamePasswordAuthenticationToken authencation = new UsernamePasswordAuthenticationToken(userData, null, authorities);
                 SecurityContextHolder.getContext().setAuthentication(authencation);
             }
             filterChain.doFilter(request, response);

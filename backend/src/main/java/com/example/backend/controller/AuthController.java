@@ -5,6 +5,7 @@ import com.example.backend.dto.request.LoginRequest;
 import com.example.backend.dto.request.RegisterUserRequest;
 import com.example.backend.dto.response.LoginResponse;
 import com.example.backend.dto.response.RegisterUserResponse;
+import com.example.backend.entity.Role;
 import com.example.backend.entity.User;
 import com.example.backend.repository.UserRepository;
 import jakarta.validation.Valid;
@@ -15,6 +16,8 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Set;
 
 @RestController
 @RequestMapping("/auth")
@@ -48,6 +51,12 @@ public class AuthController {
         newUser.setPassword(passwordEncoder.encode(request.password()));
         newUser.setEmail(request.email());
         newUser.setName(request.name());
+
+        if (request.role() != null) {
+            newUser.setRoles(Set.of(request.role()));
+        } else {
+            newUser.setRoles((Set.of(Role.ROLE_USER)));
+        }
 
         userRepository.save(newUser);
 
