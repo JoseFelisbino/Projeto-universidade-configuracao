@@ -1,0 +1,2 @@
+ALTER TABLE users add column data_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
