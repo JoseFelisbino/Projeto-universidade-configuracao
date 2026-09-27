@@ -1,0 +1,3 @@
+ALTER TABLE users add column data_criacao TIMETAMP DEFAULT CURRENT_TIMESTAMP;
+
+
